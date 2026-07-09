@@ -22,7 +22,7 @@ body{
 
 .logo_container{
     flex: 0.8;
-   border: 2px solid black ;
+   /* border: 2px solid black ; */
     height: 100%;
     display: flex;
     align-items: center;
@@ -39,7 +39,7 @@ body{
 }
 
 .navbar{
-    height: 120px;
+    height: 100px;
     
     width: 100%;
     display: flex;
@@ -53,7 +53,7 @@ body{
 
 .nav_container{
     height: 100%;
-    border: 2px solid black ;
+    /* border: 2px solid black ; */
     flex: 1.5;
     display: flex;
     flex-direction: row;
@@ -78,7 +78,7 @@ body{
 }
 
 .theme_container{
-    border: 2px solid black ;
+    /* border: 2px solid black ; */
     height: 100%;
     flex: 1.2;
 }
@@ -91,5 +91,46 @@ body{
 /* Main Section*/
 
 main{
-    margin-top: 8%;
+    
+    padding-top:140px;
+
+    display: flex;
+    justify-content: center;
+
+}
+.hero_container{
+    background-color: var(--secondary);
+    height: 550px;
+    width: 70%;
+    border: 2px solid black;
+    box-shadow: 8px 8px  black;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    
+}
+
+.hero_img_container{
+    
+    height: 100%;
+    flex: 0.8;
+    border: 2px solid black;
+    display: flex;
+    
+
+
+
+}
+.hero_text{
+    
+    height: 100%;
+    flex: 1.2;
+}
+
+.hero_img_container img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    
+    
 }
