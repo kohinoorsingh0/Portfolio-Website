@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+
 /* Variables */
 
 :root{
     --primary:  #FFCC01;
     --secondary: #FFF8DF;
+    --tertiary: #FFF4C1;
+    --bigfont: "Special Elite";
+    --smallfont: "sans-serif";
+    --box_shadow: 8px 8px  black;
 }
 
 
@@ -10,6 +17,9 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: var(--smallfont);
+
+    
 }
 
 body{
@@ -28,6 +38,7 @@ body{
     align-items: center;
     justify-content: space-evenly;
     font-size: 2rem;
+    
 }
 
 .logo_container img{
@@ -74,7 +85,7 @@ body{
     background-color: var(--secondary);
     padding: 0.7rem;
     border: 2px solid black;
-    box-shadow: 8px 8px  black;
+    box-shadow: var(--box_shadow);
 }
 
 .theme_container{
@@ -98,17 +109,24 @@ main{
     justify-content: center;
 
 }
+
+/* hero section */
+
 .hero_container{
     background-color: var(--secondary);
     height: 550px;
-    width: 70%;
+    width: 80%;
     border: 2px solid black;
-    box-shadow: 8px 8px  black;
+    box-shadow: var(--box_shadow);
     display: flex;
     align-items: center;
     padding: 25px;
+    gap: 30px;
+
     
 }
+
+/* hero image */
 
 .hero_img_container{
     
@@ -116,15 +134,7 @@ main{
     flex: 0.8;
     border: 2px solid black;
     display: flex;
-    
-
-
-
-}
-.hero_text{
-    
-    height: 100%;
-    flex: 1.2;
+  
 }
 
 .hero_img_container img{
@@ -133,4 +143,57 @@ main{
     width: 100%;
     
     
+}
+
+/* hero text */
+
+.hero_text{
+    
+    height: 100%;
+    flex: 1.2;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    font-size: 1.2rem;
+    
+}
+
+
+
+.hero_name{
+    font-size: 5.9rem;
+    font-family: var(--bigfont);
+    font-weight: 900;
+    position: relative;
+    top: 40px;
+}
+
+
+
+.small_hero_text{
+    position: relative;
+    top: 10px;
+    
+}
+
+.hero_button button{
+    
+    padding: 10px 20px 10px 20px;
+    font-size: 1.2rem;
+    position: relative;
+    bottom: 15px;
+    box-shadow: var(--box_shadow);
+    border: 2px solid black;
+    
+
+    
+    
+}
+.github{
+    background-color: var(--tertiary);
+}
+.view_project{
+    background-color: var(--secondary);
+    left: 10px;
 }
