@@ -86,6 +86,14 @@ body{
     box-shadow: var(--box_shadow);
 }
 
+.nav_container div:hover{
+    transform: translate(4px,4px);
+    box-shadow: none;
+    transition: all .2s ease;
+    background-color: var(--tertiary);
+    
+}
+
 .theme_container{
     /* border: 2px solid black ; */
     height: 100%;
@@ -158,10 +166,10 @@ main{
     
     height: 100%;
     flex: 1.2;
-    
+        
     display: flex;
     flex-direction: column;
-    gap: 70px;
+    gap: 60px;
     font-size: 1.2rem;
     
 }
@@ -172,17 +180,13 @@ main{
     font-size: 5.9rem;
     font-family: var(--bigfont);
     font-weight: 900;
-    position: relative;
-    top: 40px;
+    /* position: relative;
+    top: 40px; */
 }
 
 
 
-.small_hero_text{
-    position: relative;
-    top: 10px;
-    
-}
+
 
 .hero_button button{
 
@@ -190,21 +194,52 @@ main{
     
     padding: 10px 20px 10px 20px;
     font-size: 1.2rem;
-    position: relative;
-    bottom: 15px;
+     
     box-shadow: var(--box_shadow);
-    border: 2px solid black;
-    
-
-    
+    border: 3px solid black;
     
 }
+
+.hero_button button:hover{
+    transform: translate(4px,4px);
+    box-shadow: none;
+    transition: all .2s ease;
+}
+
+
+.hero_button{
+    display: flex;
+    gap: 20px;
+    
+}
+
+
 .github{
     background-color: var(--tertiary);
+    font-weight: 600;
+
+}
+
+.github:hover{
+    background-color: #301700;
+    
+    color: orange;
+    border: 2px solid orange;
+    
+    
+    
 }
 .view_project{
     background-color: var(--secondary);
-    left: 10px;
+    
+    font-weight: 600;
+}
+.view_project:hover{
+    background-color: #301700;
+    
+    color: rgb(40, 150, 246);
+    border: 2px solid rgb(40, 150, 246);
+   
 }
 
 /* sub hero section */
