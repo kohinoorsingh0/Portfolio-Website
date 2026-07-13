@@ -491,7 +491,7 @@ main{
 }
 
 .showcase_image_container{
-    background-color: rgb(0, 0, 0);
+    
     flex: 1;
     height: 100%;
 }
@@ -499,6 +499,25 @@ main{
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+/* ================================ */
+/*   Available Section              */
+/* ================================ */
+
+
+.available_container{
+    background-color: var(--secondary);
+    height: 120px;
+    width: 85%;
+    border: 2px solid black;
+    box-shadow: var(--box_shadow);
+    font-size: 3rem;
+    font-family: var(--bigfont);
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
