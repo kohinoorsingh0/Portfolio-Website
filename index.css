@@ -520,6 +520,32 @@ main{
     align-items: center;
 }
 
+/* ================================ */
+/* RFooter                          */
+/* ================================ */
+
+.footer_container{
+    height: 90px;
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--tertiary);
+    border-top: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.copyright, .designed_by{
+    font-family: var(--bigfont);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
 
 
 /* ================================ */
