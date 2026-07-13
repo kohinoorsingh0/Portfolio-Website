@@ -28,6 +28,7 @@ body{
     background-color: var(--primary);
     min-height: 100vh;
     
+    
 }
 
 /* Navbar */
@@ -38,22 +39,24 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-color: red;
     
 }
 
 
 
 .navbar{
-    height: 100px;
+    height: 90px;
     
-    width: 86%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    background-color: var(--primary);
+    background-color: var(--tertiary);
     position: fixed;
-    
+    border-bottom: 2px solid black;
     top: 0;
     z-index: 10;
+    
     
     
 
@@ -61,13 +64,15 @@ body{
 
 .nav_container{
     height: 100%;
-    /* border: 2px solid black ; */
-    flex: 1;
+    
+    flex: 2;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     font-size: 1.2rem;
+    
+    
     
     
     
@@ -76,29 +81,38 @@ body{
 .nav_container a{
     text-decoration: none;
     color: black;
-    
-}
-
-.nav_container div{
-    background-color: var(--secondary);
+     background-color: var(--secondary);
     padding: 10px 20px 10px 20px;
     border: 2px solid black;
     box-shadow: var(--box_shadow);
     cursor: pointer;
+    font-family: var(--bigfont);
+    
+
+    
+}
+.nav_container div a:hover{
+    color:orange ;
+    transform: translate(4px,4px);
+    background-color: #301700;
+    
+    
+    border: 2px solid orange;
+    transition: all .2s ease;
 }
 
-.nav_container div:hover{
-    transform: translate(4px,4px);
-    
-    transition: all .2s ease;
-    background-color: var(--tertiary);
-    
+
+
+
+
+.freespace{
+    flex: 1;
 }
 
 .theme_container{
     /* border: 2px solid black ; */
     height: 100%;
-    flex: 0.7;
+    flex: 1;
     
 }
 
@@ -164,11 +178,15 @@ main{
 
 /* hero text */
 
+.small_hero_text{
+    font-family: var(--bigfont);
+}
+
 .hero_text{
     
     height: 100%;
     flex: 1.2;
-        
+    padding-top: 0.5rem;
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -258,23 +276,31 @@ main{
     box-sizing: border-box;
     
     
+    
 }
 
 .based_in{
     border-right: 2px solid black;
     flex: 1;
-   
-    
-    
+  
+}
+.based_in span{
+    font-family: var(--bigfont);
 }
 .focus{
     border-right: 2px solid black;
     flex: 1;
 }
+.focus span{
+    font-family: var(--bigfont);
+}
 .status{
     
     flex: 1;
     
+}
+.status span{
+    font-family: var(--bigfont);
 }
 
 .focus, .based_in, .status{
@@ -328,7 +354,7 @@ main{
 }
 
 .about_paragraph{
-    font-size: 1.05rem;
+   font-size: 1.2rem;
     line-height: 1.6;
 }
 
@@ -430,36 +456,3 @@ main{
 /* Responsive                       */
 /* ================================ */
 
-@media (max-width: 900px){
-    .hero_container{
-        flex-direction: column;
-        height: auto;
-    }
-
-    .hero_img_container{
-        width: 100%;
-        height: 350px;
-    }
-
-    .hero_name{
-        font-size: 3.2rem;
-    }
-
-    .sub_hero_container{
-        flex-direction: column;
-        height: auto;
-    }
-
-    .based_in, .focus{
-        border-right: none;
-        border-bottom: 2px solid black;
-    }
-
-    .about_links_container{
-        flex-direction: column;
-    }
-
-    .about_heading{
-        font-size: 1.8rem;
-    }
-}
