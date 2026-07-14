@@ -64,7 +64,7 @@ body{
 
 .nav_container{
     height: 100%;
-    
+    padding-left: 100px;
     flex: 2;
     display: flex;
     flex-direction: row;
@@ -111,6 +111,40 @@ body{
     /* border: 2px solid black ; */
     height: 100%;
     flex: 1;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.theme_container div a{
+    text-decoration: none;
+    font-weight: 900;
+   
+    padding: 10px 10px 10px 10px;
+    border: 2px solid black;
+    box-shadow: var(--box_shadow);
+    cursor: pointer;
+    font-family: var(--bigfont)
+}
+
+
+
+.main_theme{
+    background-color: var(--primary);
+    color: black;
+}
+
+.light_theme{
+    background-color: var(--secondary);
+    color: #000000;
+}
+
+.dark_theme{
+    background-color: black;
+    color: white;
     
 }
 
