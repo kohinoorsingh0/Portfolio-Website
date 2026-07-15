@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+
+/* Variables */
+
+:root{
+    --primary:  #FFCC01;
+    --secondary: #FFF8DF;
+    --tertiary: #FFF4C1;
+    --bigfont: "Special Elite";
+    --smallfont: "sans-serif";
+    --box_shadow: 8px 8px 0px black;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* body */
+
+body{
+    background-color: var(--primary);
+    min-height: 100vh;
+    
+    
+}
+
+/* Navbar */
+
+
+
+.container_of_nav_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: red;
+    
+}
+
+
+
+.navbar{
+    height: 90px;
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--tertiary);
+    position: fixed;
+    border-bottom: 2px solid black;
+    top: 0;
+    z-index: 10;
+    
+    
+    
+
+}
+
+.nav_container{
+    height: 100%;
+    padding-left: 100px;
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.2rem;
+    
+    
+    
+    
+    
+}
+
+.nav_container a{
+    text-decoration: none;
+    color: black;
+     background-color: var(--secondary);
+    padding: 10px 20px 10px 20px;
+    border: 2px solid black;
+    box-shadow: var(--box_shadow);
+    cursor: pointer;
+    font-family: var(--bigfont);
+    
+
+    
+}
+.nav_container div a:hover{
+    color:orange ;
+    transform: translate(4px,4px);
+    background-color: #301700;
+    border: 2px solid orange;
+    transition: all .2s ease;
+}
+
+
+
+
+
+.freespace{
+    flex: 1;
+}
+
+.theme_container{
+    /* border: 2px solid black ; */
+    height: 100%;
+    flex: 1;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.theme_container div a{
+    text-decoration: none;
+    font-weight: 900;
+   
+    padding: 10px 10px 10px 10px;
+    border: 2px solid black;
+    box-shadow: var(--box_shadow);
+    cursor: pointer;
+    font-family: var(--bigfont)
+}
+
+
+
+.main_theme{
+    background-color: var(--primary);
+    color: black;
+}
+
+.light_theme{
+    background-color: var(--secondary);
+    color: #000000;
+}
+
+.dark_theme{
+    background-color: black;
+    color: white;
+    
+}
