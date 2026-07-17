@@ -18,10 +18,9 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: var(--smallfont);
+    font-size: 1.05rem;
     box-sizing: border-box;
-
-    
+    font-family: var(--smallfont);
 }
 
 body{
