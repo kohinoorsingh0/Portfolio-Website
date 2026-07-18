@@ -122,12 +122,17 @@ main {
 }
 
 .skills-intro {
+    position: relative;
     background: var(--secondary);
     border: 2px solid black;
     box-shadow: var(--box_shadow);
-    padding: clamp(28px, 5vw, 62px);
+    padding: 50px;
     margin-bottom: 34px;
     margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
 }
 
 .eyebrow {
@@ -157,6 +162,77 @@ h1 {
     max-width: 670px;
     font-size: 1.15rem;
     line-height: 1.65;
+}
+
+.skills_text_container{
+    flex: 1;
+    
+}
+
+.skills-visual{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+}
+
+.tech-tile {
+    width: 250px;
+    height: 250px;
+    background: var(--secondary);
+    border: 2px solid black;
+    box-shadow: 6px 6px 0px black;
+    padding: 16px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.tech-tile:hover{
+    transform: scale(1.05);
+    transition: all .2s ease;
+}
+
+.tech-tile img {
+    width: 46px;
+    height: 46px;
+    object-fit: contain;
+}
+
+.tech-tile span {
+    font-family: var(--bigfont);
+    font-size: .9rem;
+}
+
+.tile-react {
+    background: var(--tertiary);
+    transform: rotate(-5deg);
+}
+
+.tile-node {
+    transform: rotate(4deg);
+}
+
+.tile-express {
+    transform: rotate(3deg);
+}
+
+.tile-mongo {
+    background: var(--tertiary);
+    transform: rotate(-4deg);
+}
+
+@media (max-width: 900px) {
+    .skills-intro {
+        flex-direction: column;
+    }
+
+    .skills-visual {
+        display: none;
+    }
 }
 
 .skill-groups {
@@ -262,29 +338,26 @@ h1 {
     line-height: 1.6;
 }
 
-/*
-footer {
-    padding: 28px 7.5%;
-    background: var(--tertiary);
+/* footer */
+
+/* .footer_container{
+    height: 90px;
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--tertiary);
     border-top: 2px solid black;
     display: flex;
-    justify-content: space-between;
-    gap: 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.copyright, .designed_by{
     font-family: var(--bigfont);
-}
-
-@media (max-width: 900px) {
-    .skill-groups { grid-template-columns: 1fr; }
-    .skill-card { min-height: auto; }
-    .card-copy { min-height: auto; }
-}
-
-@media (max-width: 640px) {
-    .site-header, footer { padding: 18px 5%; }
-    .site-header { align-items: flex-start; flex-direction: column; }
-    main { width: 91%; padding-top: 42px; }
-    .skills-intro, .skill-card, .learning-now { padding: 22px; }
-    .learning-now { grid-template-columns: 1fr; gap: 22px; }
-    footer { flex-direction: column; }
-}
-*/
+    font-size: 1.2rem;
+    font-weight: 400;
+} */
