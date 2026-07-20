@@ -171,16 +171,7 @@ main{
     max-width: 800px;
 }
 
-.notice_bar{
-    background-color: var(--tertiary);
-    border: 2px solid black;
-    padding: 14px 18px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 0.95rem;
-}
+
 
 /* ================================ */
 /* Filter tags                      */
