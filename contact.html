@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Kohinoor Singh</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <!-- navbar start -->
+    <!-- <div class="container_of_nav_container">
+      <nav class="navbar"> -->
+        <!-- nav link section start -->
+        <!-- <div class="nav_container">
+          <div><a href="index.html">Home</a></div>
+          <div><a href="about.html">About</a></div>
+          <div><a href="skills.html">Skills</a></div>
+          <div><a href="services.html">Services</a></div>
+          <div><a href="projects.html">Projects</a></div>
+          <div><a href="experience.html">Experience</a></div>
+          
+        </div> -->
+        <!-- nav link section end -->
+
+        <!-- <div class="freespace"></div> -->
+
+        <!-- theme section start -->
+        <!-- <div class="theme_container">
+          <div><a class="main_theme" href="#Present-theme">Main Theme</a></div>
+          <div><a class="light_theme" href="#Light-theme">Light Theme</a></div>
+          <div><a class="dark_theme"  href="#Dark-theme">Dark Theme</a></div>
+        </div> -->
+        <!-- theme section end -->
+      <!-- </nav>
+    </div> -->
+    <!-- navbar end -->
+
+    <main id="contact">
+
+        <!-- intro section start -->
+        <section class="contact_intro">
+            <div class="intro_text_container">
+                <div class="eyebrow">Get In Touch</div>
+                <h1 class="intro_heading">Let's build something together.</h1>
+                <p class="intro_paragraph">
+                    Got an idea, an internship opening, or a project that needs a full-stack hand?
+                    Fill out the form, drop me an email, or find me on any of the platforms below.
+                    I try to reply within a day or two.
+                </p>
+            </div>
+
+            <div class="intro_visual" aria-hidden="true">
+                <div class="visual_tile tile_1">
+                    <span class="tile_glyph">&#9993;</span>
+                    <span>Email</span>
+                </div>
+                <div class="visual_tile tile_2">
+                    <span class="tile_glyph">&#128172;</span>
+                    <span>Message</span>
+                </div>
+                <div class="visual_tile tile_3">
+                    <span class="tile_glyph">&#128225;</span>
+                    <span>Connect</span>
+                </div>
+            </div>
+        </section>
+        <!-- intro section end -->
+
+        <!-- info bar start -->
+        <div class="info_bar">
+            <a class="info_item" href="mailto:kohinoorsingh0@example.com">
+                <span>Email</span>
+                <span class="bold">kohinoorsingh0@example.com</span>
+            </a>
+            <div class="info_item">
+                <span>Based In</span>
+                <span class="bold">Karnal, Haryana</span>
+            </div>
+            <div class="info_item">
+                <span>Response Time</span>
+                <span class="bold">Usually within 24–48 hrs</span>
+            </div>
+        </div>
+        <!-- info bar end -->
+
+        <!-- contact grid: form + socials start -->
+        <div class="contact_grid">
+
+            <!-- contact form box start -->
+            <div class="contact_form_box">
+                <h2>Send a Message</h2>
+                <p class="form_subtext">
+                    Tell me a bit about what you're working on. The more detail, the better I can help.
+                </p>
+
+                <form class="contact_form" id="contactForm" novalidate>
+
+                    <div class="form_row">
+                        <div class="form_group">
+                            <label for="name">Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" placeholder="Your full name" required>
+                            <div class="field_error" id="nameError"></div>
+                        </div>
+
+                        <div class="form_group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                            <div class="field_error" id="emailError"></div>
+                        </div>
+                    </div>
+
+                    <div class="form_row">
+                        <div class="form_group">
+                            <label for="subject">Subject <span class="required">*</span></label>
+                            <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                            <div class="field_error" id="subjectError"></div>
+                        </div>
+
+                        <div class="form_group">
+                            <label for="reason">Reason</label>
+                            <select id="reason" name="reason">
+                                <option value="Project / Freelance work">Project / Freelance work</option>
+                                <option value="Internship opportunity">Internship opportunity</option>
+                                <option value="Collaboration">Collaboration</option>
+                                <option value="General question">General question</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form_group">
+                        <label>Estimated Budget</label>
+                        <div class="budget_options" id="budgetOptions">
+                            <div class="budget_chip" data-value="Not sure yet">Not sure yet</div>
+                            <div class="budget_chip" data-value="Under $200">Under $200</div>
+                            <div class="budget_chip" data-value="$200 - $500">$200 - $500</div>
+                            <div class="budget_chip" data-value="$500+">$500+</div>
+                        </div>
+                    </div>
+
+                    <div class="form_group">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea id="message" name="message" placeholder="Tell me about your project, timeline, and anything else I should know..." required maxlength="600"></textarea>
+                        <div class="char_count"><span id="charCount">0</span>/600</div>
+                        <div class="field_error" id="messageError"></div>
+                    </div>
+
+                    <div class="form_footer_row">
+                        <button type="submit" class="send_button" id="sendButton">Send Message</button>
+                        <div class="form_status" id="formStatus"></div>
+                    </div>
+
+                    <div class="form_success_banner" id="successBanner">
+                        <span class="success_icon">&#10003;</span>
+                        <span>Thanks, your message is ready to go! Since this site doesn't have a backend yet, it isn't sent automatically — please also reach out at <strong>kohinoorsingh0@example.com</strong> so I don't miss it.</span>
+                    </div>
+                </form>
+            </div>
+            <!-- contact form box end -->
+
+            <!-- social box start -->
+            <div class="social_box">
+                <div class="eyebrow">Find Me Online</div>
+
+                <a href="https://github.com/kohinoorsingh0" target="_blank" rel="noopener noreferrer" class="social_card">
+                    <div class="social_icon">GH</div>
+                    <div class="social_text">
+                        <div class="social_title">GitHub</div>
+                        <div class="social_desc">Source code, commits, and work in progress.</div>
+                    </div>
+                </a>
+
+                <a href="https://linkedin.com/in/kohinoorsingh0" target="_blank" rel="noopener noreferrer" class="social_card">
+                    <div class="social_icon">in</div>
+                    <div class="social_text">
+                        <div class="social_title">LinkedIn</div>
+                        <div class="social_desc">Professional updates and career history.</div>
+                    </div>
+                </a>
+
+                <a href="https://twitter.com/kohinoorsingh0" target="_blank" rel="noopener noreferrer" class="social_card">
+                    <div class="social_icon">X</div>
+                    <div class="social_text">
+                        <div class="social_title">Twitter / X</div>
+                        <div class="social_desc">Thoughts on dev, builds, and progress.</div>
+                    </div>
+                </a>
+
+                <a href="https://instagram.com/kohinoorsingh0" target="_blank" rel="noopener noreferrer" class="social_card">
+                    <div class="social_icon">IG</div>
+                    <div class="social_text">
+                        <div class="social_title">Instagram</div>
+                        <div class="social_desc">Behind-the-scenes and everyday moments.</div>
+                    </div>
+                </a>
+
+                <a href="mailto:kohinoorsingh0@example.com" class="social_card">
+                    <div class="social_icon">&#9993;</div>
+                    <div class="social_text">
+                        <div class="social_title">Email</div>
+                        <div class="social_desc">kohinoorsingh0@example.com</div>
+                    </div>
+                </a>
+            </div>
+            <!-- social box end -->
+
+        </div>
+        <!-- contact grid end -->
+
+        <!-- process section start -->
+        <section class="process_section">
+            <div class="eyebrow">What Happens Next</div>
+            <h2>From your message to a working plan.</h2>
+
+            <div class="process_steps">
+                <div class="step">
+                    <div class="step_number">1</div>
+                    <div class="step_title">You Reach Out</div>
+                    <p>Fill in the form or email me directly with what you have in mind.</p>
+                </div>
+                <div class="step">
+                    <div class="step_number">2</div>
+                    <div class="step_title">I Respond</div>
+                    <p>I get back within 24–48 hours to ask questions or confirm details.</p>
+                </div>
+                <div class="step">
+                    <div class="step_number">3</div>
+                    <div class="step_title">We Plan</div>
+                    <p>We line up scope, timeline, and next steps before any code is written.</p>
+                </div>
+            </div>
+        </section>
+        <!-- process section end -->
+
+        <!-- FAQ section start -->
+        <section class="faq_section">
+            <div class="eyebrow">Quick Answers</div>
+
+            <div class="faq_item">
+                <button type="button" class="faq_question">
+                    <span>Are you available for internships right now?</span>
+                    <span class="faq_plus">+</span>
+                </button>
+                <div class="faq_answer">
+                    <p>Yes — I'm currently a BCA student actively looking for internships and short-term freelance work to build real-world experience.</p>
+                </div>
+            </div>
+
+            <div class="faq_item">
+                <button type="button" class="faq_question">
+                    <span>What kind of projects do you take on?</span>
+                    <span class="faq_plus">+</span>
+                </button>
+                <div class="faq_answer">
+                    <p>Mostly frontend builds, small full-stack MERN apps, API work, and debugging or code review on existing projects.</p>
+                </div>
+            </div>
+
+            <div class="faq_item">
+                <button type="button" class="faq_question">
+                    <span>How fast do you usually reply?</span>
+                    <span class="faq_plus">+</span>
+                </button>
+                <div class="faq_answer">
+                    <p>Within 24–48 hours in most cases. If it's urgent, mention it in the subject line.</p>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ section end -->
+
+        <!-- Available container start -->
+        <div class="available_container">
+            Available for internships, freelance work, and collaborations
+        </div>
+
+    </main>
+
+    <!-- <footer class="footer_container">
+      <div class="designed_by">Designed and developed by Kohinoor.</div>
+      <div class="copyright">© 2026 All rights reserved.</div>
+    </footer> -->
+
+    
+
+</body>
+</html> 

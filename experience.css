@@ -488,49 +488,6 @@ main{
 .swatch_3{ background-color: #FFE58A; }
 .swatch_4{ background-color: var(--secondary); }
 
-/* ================================ */
-/* Growth chart section             */
-/* ================================ */
-
-.growth_section{
-    width: 85%;
-    background-color: var(--tertiary);
-    border: 2px solid black;
-    box-shadow: var(--box_shadow);
-    padding: 40px;
-}
-
-.growth_chart_container{
-    margin-top: 28px;
-    background-color: var(--secondary);
-    border: 2px solid black;
-    box-shadow: 6px 6px 0px black;
-    padding: 20px;
-}
-
-.growth_svg{
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.growth_svg .point{
-    fill: var(--primary);
-    stroke: black;
-    stroke-width: 3;
-}
-
-.growth_svg .axis_label{
-    font-family: var(--smallfont);
-    font-size: 13px;
-    fill: black;
-}
-
-.growth_svg .value_label{
-    font-family: var(--bigfont);
-    font-size: 13px;
-    fill: black;
-}
 
 /* ================================ */
 /* Available strip (shared pattern) */
