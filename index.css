@@ -451,6 +451,24 @@ main{
     line-height: 1.4;
 }
 
+.link_card{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.link_icon{
+    font-size: 1.8rem;
+    flex-shrink: 0;
+    width: 32px;
+    text-align: center;
+}
+
+.github_link .link_icon{ color: #181717; }
+.linkedin_link .link_icon{ color: #0A66C2; }
+.instagram_link .link_icon{ color: #E4405F; }
+.leetcode_link .link_icon{ color: #FFA116; }
+
 /* ================================ */
 /* Tools section                    */
 /* ================================ */
