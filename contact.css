@@ -154,13 +154,14 @@ h1, h2 {
     background: var(--secondary);
     border: 2px solid black;
     box-shadow: var(--box_shadow);
-    padding: 50px;
+    padding: 40px;
     margin-top: 90px;
     margin-bottom: 34px;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 30px;
+    height: 600px;
 }
 
 .intro_text_container {
@@ -181,57 +182,24 @@ h1, h2 {
     line-height: 1.65;
 }
 
-.intro_visual {
-    flex: 1;
+.hero_img {
+    flex: 1.3;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     gap: 40px 60px;
+    height: 100%;
 }
-
-.visual_tile {
-    width: 170px;
-    height: 170px;
-    background: var(--tertiary);
+.hero_img img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-position: 50% 27%;
     border: 2px solid black;
-    box-shadow: 6px 6px 0px black;
-    padding: 14px 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+
 }
 
-.visual_tile:hover {
-    transform: scale(1.05);
-    transition: all .2s ease;
-}
-
-.tile_glyph {
-    font-family: var(--bigfont);
-    font-size: 1.6rem;
-}
-
-.visual_tile span:last-child {
-    font-family: var(--bigfont);
-    font-size: .85rem;
-}
-
-.tile_1 {
-    background: var(--primary);
-    transform: rotate(-5deg);
-}
-
-.tile_2 {
-    transform: rotate(4deg);
-}
-
-.tile_3 {
-    background: var(--primary);
-    transform: rotate(3deg);
-}
 
 /* ================================ */
 /* info bar                          */
