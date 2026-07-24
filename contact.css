@@ -515,8 +515,8 @@ h1, h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--primary);
-    border: 2px solid black;
+   
+    
     font-family: var(--bigfont);
     font-size: 1.1rem;
 }
@@ -537,6 +537,15 @@ h1, h2 {
     line-height: 1.35;
 }
 
+.social_icon i{
+    font-size: 1.3rem;
+}
+
+.github_icon i{ color: #181717; }
+.linkedin_icon i{ color: #0A66C2; }
+.twitter_icon i{ color: #000000; }
+.instagram_icon i{ color: #E4405F; }
+.email_icon i{ color: #301700; }
 /* ================================ */
 /* process / what happens next       */
 /* ================================ */
